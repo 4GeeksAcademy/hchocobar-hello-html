@@ -1,0 +1,19 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    color: blue;
+}
+
+.cuerpo {
+    background-color: antiquewhite;
+}
+
+.titulo {
+    text-align: center;
+}
+
+#mifooter {
+    background: grey;
+}
