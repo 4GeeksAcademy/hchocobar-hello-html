@@ -1,0 +1,14 @@
+## Git
+
+git add .  # agrega los archivos para ser comiteados
+
+git commit -m "mensaje"  # genera un commit con los archivos que estaban preparados (Stage)
+
+git push origin main   # enviando el commit a el repositorio remoto (github)
+
+
+
+
+## un comandos mas
+
+git status
