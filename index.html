@@ -13,266 +13,79 @@
 </head>
 <body>
   <div class="container bg-light">
-    <div class="row">  <!-- navbar -->
-      <nav class="navbar navbar-light-hcht">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <i class="bi bi-instagram"></i>
-            Instagram
-          </a>
-          <form class="justify-content-end">
-            <div class="d-inline">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Create a new post
-              </button>
-            </div>
-            <!-- Button dropdown -->
-            <div class="d-inline dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-gear-fill"></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
-              </ul>
-            </div>
-          </form>
+    <h1 class="text-center">HTML Forms</h1>
+    <form action="" onsubmit="nombrefuncion()">
+      <!-- inicio de fila 1 -->
+      <div class="row mb-3">
+        <!-- inicio columna 1 -->
+        <div class="col">
+          <label for="exampleFormControlInput1" class="form-label">Ingresa un email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com">
         </div>
-      </nav>
-    </div>
-    <div class="row"></div>  <!-- change grid -->
-    <!-- pills toggle : start   -->
-    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true"><i class="bi bi-square-fill"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false"><i class="bi bi-grid-3x3-gap-fill"></i></button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Cocker</h5>
-              </div>
-              <div class="float-end">
-                <small>8-Oct</small>
-              </div>
-            </div>
-            <img src="img/cocker.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">209 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Corgi</h5>
-              </div>
-              <div class="float-end">
-                <small>10-Oct</small>
-              </div>
-            </div>
-            <img src="img/corgi.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">175 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Dalmatian</h5>
-              </div>
-              <div class="float-end">
-                <small>12-Oct</small>
-              </div>
-            </div>
-            <img src="img/dalmatian.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">405 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Doberman</h5>
-              </div>
-              <div class="float-end">
-                <small>15-Oct</small>
-              </div>
-            </div>
-            <img src="img/doberman.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">358 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Dog</h5>
-              </div>
-              <div class="float-end">
-                <small>17-Oct</small>
-              </div>
-            </div>
-            <img src="img/dog.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">421 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Labrador</h5>
-              </div>
-              <div class="float-end">
-                <small>22-Oct</small>
-              </div>
-            </div>
-            <img src="img/labrador.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">652 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Rhodesian</h5>
-              </div>
-              <div class="float-end">
-                <small>24-Oct</small>
-              </div>
-            </div>
-            <img src="img/rhodesian.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">221 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Shepherd</h5>
-              </div>
-              <div class="float-end">
-                <small>25-Oct</small>
-              </div>
-            </div>
-            <img src="img/shepherd.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">512 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Weimaraner</h5>
-              </div>
-              <div class="float-end">
-                <small>27-Oct</small>
-              </div>
-            </div>
-            <img src="img/weimaraner.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">452 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
+        <!-- inicio columna 2 -->
+        <div class="col">
+          <label class="form-label">Password</label>
+          <input type="password" id="inputPassword6" class="form-control" aria-labelledby="passwordHelpInline">
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/cocker.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/corgi.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/dalmatian.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="img/doberman.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/dog.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/labrador.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="img/rhodesian.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/shepherd.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/weimaraner.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-        </div>
+      <!-- fin de fila 1 -->
 
-      </div>
-    </div>
-    <!-- pills toogle : end   -->
-  </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <!-- inicio fila 2 -->
+      <div class="row">
+        <!-- inicio columna 1 -->
+        <div class="col-12 col-md-6">
+          <input type="date" class="form-control mt-2">
+          <input type="file" class="form-control mt-2">
         </div>
-        <div class="modal-body">
-          <!--  Form  -->
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+        <!-- inicio columna 2 -->
+        <div class="col-6 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Default checkbox
+            </label>
           </div>
-          <button type="button" class="btn btn-outline-dark"><i class="bi bi-camera-fill"></i></button>
-          <button type="button" class="btn btn-outline-dark"><i class="bi bi-geo-alt-fill"></i></button>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+            <label class="form-check-label" for="flexCheckChecked">
+              Checked checkbox
+            </label>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Publish</button>
+        <!-- inicio columna 3 -->
+        <div class="col-6 col-md-3">
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+              Default radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+              Default checked radio
+            </label>
+          </div>
         </div>
       </div>
-    </div>
+
+
+      <!-- fin fila 2 -->
+      <div class="row">
+        <div class="col-8 mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Tu comentario"></textarea>
+        </div>
+      </div>
+
+      <div class="col-auto d-flex justify-content-evenly">
+        <button type="button"  class="btn btn-primary mx-1">Login</button>
+        <button type="submit" class="btn btn-success mx-1">Button2</button>
+        <button type="submit" class="btn btn-success mx-1">Button</button>
+        <button type="reset" class="btn btn-secondary mx-1">Cancel</button>
+      </div>
+    </form>
   </div>
 
    <!-- JavaScript Bundle with Popper -->
