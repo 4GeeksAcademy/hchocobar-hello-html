@@ -4,279 +4,218 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./syles/style.css">
   <title>Instagram Post with Bootstrap</title>
 </head>
+
 <body>
-  <div class="container bg-light">
-    <div class="row">  <!-- navbar -->
-      <nav class="navbar navbar-light-hcht">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <i class="bi bi-instagram"></i>
-            Instagram
-          </a>
-          <form class="justify-content-end">
-            <div class="d-inline">
-              <!-- Button trigger modal -->
-              <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Create a new post
-              </button>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Spain 50</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">Features</a>
+          <a class="nav-link" href="#">Pricing</a>
+          <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="container bg-light my-3">
+    <div class="row">
+      <div class="col-2 bg-warning">uno</div>
+      <div class="col-3 mycolor">dos</div>
+      <div class="col-7 bg-danger">tres</div>
+    </div>
+    <div class="row my-3">
+      <div class="col-sm-6 col-md-4 col-xl-2 bg-warning">uno</div>
+      <div class="col-sm-6 col-md-4 col-xl-2 bg-primary">dos</div>
+      <div class="col-sm-6 col-md-4 col-xl-2 bg-danger">tres</div>
+      <div class="col-sm-6 col-md-4 col-xl-2 bg-success">tres</div>
+      <div class="col-sm-6 col-md-4 col-xl-2 bg-warning">uno</div>
+      <div class="col-sm-6 col-md-4 col-xl-2 bg-primary">dos</div>
+    </div>
+    <div class="container my-3">
+      <button type="button" class="btn btn-primary hcht-btn-primary">Primary</button>
+      <button type="button" class="btn btn-secondary">Secondary</button>
+      <button type="button" class="btn btn-success">Success</button>
+      <button type="button" class="btn btn-danger">Danger</button>
+      <button type="button" class="btn btn-warning btn-lg">Warning</button>
+      <button type="button" class="btn btn-info">Info</button>
+      <button type="button" class="btn btn-light mycolor">Light</button>
+      <button type="button" class="btn btn-dark" disabled>Dark</button>
+      <button type="button" class="btn btn-link">Link</button>
+    </div>
+    <div class="row my-3">
+      <div class="alert alert-success" role="alert">
+        A simple success alert—check it out!
+      </div>
+      <div class="alert alert-warning alert-dismissible fade show" role="alert">
+        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+      
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Free</h4>
             </div>
-            <!-- Button dropdown -->
-            <div class="d-inline dropdown">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-gear-fill"></i>
-              </button>
-              <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><a class="dropdown-item" href="#">Accessibility</a></li>
-                <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>10 users included</li>
+                <li>2 GB of storage</li>
+                <li>Email support</li>
+                <li>Help center access</li>
               </ul>
-            </div>
-          </form>
-        </div>
-      </nav>
-    </div>
-    <div class="row"></div>  <!-- change grid -->
-    <!-- pills toggle : start   -->
-    <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-1-tab" data-bs-toggle="pill" data-bs-target="#pills-1" type="button" role="tab" aria-controls="pills-1" aria-selected="true"><i class="bi bi-square-fill"></i></button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-2-tab" data-bs-toggle="pill" data-bs-target="#pills-2" type="button" role="tab" aria-controls="pills-2" aria-selected="false"><i class="bi bi-grid-3x3-gap-fill"></i></button>
-      </li>
-    </ul>
-    <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-1-tab" tabindex="0">
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Cocker</h5>
-              </div>
-              <div class="float-end">
-                <small>8-Oct</small>
-              </div>
-            </div>
-            <img src="img/cocker.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">209 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
+              <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
             </div>
           </div>
         </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Corgi</h5>
-              </div>
-              <div class="float-end">
-                <small>10-Oct</small>
-              </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3">
+              <h4 class="my-0 fw-normal">Pro</h4>
             </div>
-            <img src="img/corgi.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">175 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Dalmatian</h5>
-              </div>
-              <div class="float-end">
-                <small>12-Oct</small>
-              </div>
-            </div>
-            <img src="img/dalmatian.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">405 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
+              <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>20 users included</li>
+                <li>10 GB of storage</li>
+                <li>Priority email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
             </div>
           </div>
         </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Doberman</h5>
-              </div>
-              <div class="float-end">
-                <small>15-Oct</small>
-              </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-primary">
+            <div class="card-header py-3 text-bg-primary border-primary">
+              <h4 class="my-0 fw-normal">Enterprise</h4>
             </div>
-            <img src="img/doberman.jpg" class="card-img-top" alt="...">
             <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">358 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Dog</h5>
-              </div>
-              <div class="float-end">
-                <small>17-Oct</small>
-              </div>
-            </div>
-            <img src="img/dog.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">421 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Labrador</h5>
-              </div>
-              <div class="float-end">
-                <small>22-Oct</small>
-              </div>
-            </div>
-            <img src="img/labrador.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">652 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Rhodesian</h5>
-              </div>
-              <div class="float-end">
-                <small>24-Oct</small>
-              </div>
-            </div>
-            <img src="img/rhodesian.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">221 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Shepherd</h5>
-              </div>
-              <div class="float-end">
-                <small>25-Oct</small>
-              </div>
-            </div>
-            <img src="img/shepherd.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">512 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row py-1">
-          <div class="card w-50 mx-auto">
-            <div class="card-body">
-              <div class="float-start">
-                <h5 class="card-title">Weimaraner</h5>
-              </div>
-              <div class="float-end">
-                <small>27-Oct</small>
-              </div>
-            </div>
-            <img src="img/weimaraner.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h6 class="card-subtitle mb-2 text-muted">452 Likes</h6>
-              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis lorem massa. Vestibulum sagittis dignissim lectus, at tincidunt nisl sagittis.</p>
+              <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>30 users included</li>
+                <li>15 GB of storage</li>
+                <li>Phone and email support</li>
+                <li>Help center access</li>
+              </ul>
+              <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
             </div>
           </div>
         </div>
       </div>
-      <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-2-tab" tabindex="0">
-        <div class="row">
-          <div class="col-4">
-            <img src="img/cocker.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/corgi.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/dalmatian.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="img/doberman.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/dog.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/labrador.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="img/rhodesian.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/shepherd.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-          <div class="col-4">
-            <img src="img/weimaraner.jpg" class="img-thumbnail rounded mx-auto" alt="...">
-          </div>
-        </div>
 
+      <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+      <div class="table-responsive">
+        <table class="table text-center">
+          <thead>
+            <tr>
+              <th style="width: 34%;"></th>
+              <th style="width: 22%;">Free</th>
+              <th style="width: 22%;">Pro</th>
+              <th style="width: 22%;">Enterprise</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Public</th>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Private</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <th scope="row" class="text-start">Permissions</th>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Sharing</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Unlimited members</th>
+              <td></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+            </tr>
+            <tr>
+              <th scope="row" class="text-start">Extra security</th>
+              <td></td>
+              <td></td>
+              <td><svg class="bi" width="24" height="24">
+                  <use xlink:href="#check"></use>
+                </svg></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
+
     </div>
-    <!-- pills toogle : end   -->
+
   </div>
 
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Create a new post</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <!--  Form  -->
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Caption:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
-          </div>
-          <button type="button" class="btn btn-outline-dark"><i class="bi bi-camera-fill"></i></button>
-          <button type="button" class="btn btn-outline-dark"><i class="bi bi-geo-alt-fill"></i></button>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-success">Publish</button>
-        </div>
-      </div>
-    </div>
-  </div>
 
-   <!-- JavaScript Bundle with Popper -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
 </body>
+
 </html>

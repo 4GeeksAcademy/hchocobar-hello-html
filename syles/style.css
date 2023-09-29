@@ -1,7 +1,4 @@
-body {
-    background-color: black;
-}
-
-.navbar-light-hcht {
-    background-color:  #f2f2ff;
+.btn-primary {
+  background: lightskyblue;
+  color: black;
 }
