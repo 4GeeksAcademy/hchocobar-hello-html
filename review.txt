@@ -6,9 +6,18 @@ git commit -m "mensaje"  # genera un commit con los archivos que estaban prepara
 
 git push origin main   # enviando el commit a el repositorio remoto (github)
 
-
-
-
 ## un comandos mas
 
 git status
+
+## otros mas
+
+git checkout develop
+git pull origin develop
+git branch -d my-branch
+
+
+days : "lunes", "martes", "miércoles", "jueves", "viernes", "sábados", "domingos"
+month : 'enero', 'febrero', 'marzo', 'abril',
+        'mayo', 'junio', 'julio', 'agosto',
+        'setiembre', 'octubre', 'noviembre', 'diciembre'

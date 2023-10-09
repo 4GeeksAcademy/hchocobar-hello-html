@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,7 +33,7 @@
       </div>
     </div>
   </nav>
-  <div class="container bg-light my-3">
+  <!--   <div class="container bg-light my-3">
     <div class="row">
       <div class="col-2 bg-warning">uno</div>
       <div class="col-3 mycolor">dos</div>
@@ -201,12 +202,39 @@
           </tbody>
         </table>
       </div>
+ -->
+  <div class="container">
+    <form>
+      <div class="mb-3">
+        <label for="mail" class="form-label">Email address</label>
+        <input id="mail" type="email" class="form-control">
+      </div>
 
-    </div>
+      <select id="pais" class="mb-3 form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="es">España</option>
+        <option value="ar">Argentina</option>
+        <option value="ve">Venezuela</option>
+        <option value="uy">Uruguay</option>
+      </select>
+
+      <div class="mb-3 form-check">
+        <input id="check" type="checkbox" class="form-check-input">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-secondary">Alert</button>
+      <button type="reset" class="btn btn-danger">Cancel</button>
+    </form>
+  </div>
 
   </div>
 
+  </div>
 
+  <!-- INsertar mi archivo JS -->
+  <script src="./js/index.js"></script>
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
