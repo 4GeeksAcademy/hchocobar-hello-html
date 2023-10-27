@@ -1,4 +1,54 @@
-// alert('Hola Mundo')
+function handleBtnLogin() {
+  isLogin ? logout() : login();
+  isLogin = !isLogin;
+}
+
+
+function login() {
+    // El usuario no está logeado
+    console.log('Click en Login');
+    document.querySelector('#login').innerHTML = 'Logout';
+    document.querySelector('#login').className = "btn btn-secondary";
+    const userLogged = document.querySelector('#user');
+    userLogged.innerHTML = 'Bienvenido Héctor';
+    userLogged.className = 'text-center'
+};
+
+
+function logout() {
+    // El usuario esta logeado
+    console.log('Click en Logout');
+    const btnLogin = document.querySelector('#login');
+    btnLogin.innerHTML = 'Login';
+    btnLogin.className = 'btn btn-warning';
+    const userLogged = document.querySelector('#user');
+    userLogged.innerHTML = '';
+    userLogged.className = 'd-none'
+}
+// condicion ? unaSentenciaXtrue : unaSentenciaXfalse;
+
+
+function increaseCounter() {
+	counter++;
+	document.querySelector('#screen').innerHTML = "The counter value is " + counter;
+}
+
+
+function decreaseCounter() {
+	counter--;
+	document.querySelector('#screen').innerHTML = "The counter value is " + counter;
+}
+
+
+function resetCounter() {
+	counter = 0;
+	document.querySelector('#screen').innerHTML = "The counter value is " + counter;
+}
+
+
+let isLogin = false;
+let counter = 0;
+/* // alert('Hola Mundo')
 console.log('Hola Mundo')
 // console.log("otro mensaje");
 
@@ -41,4 +91,4 @@ let myObject = {
   'clave': 'valor',
   'name': 'Hector',
   'role': 'mentor',
-} 
+}  */

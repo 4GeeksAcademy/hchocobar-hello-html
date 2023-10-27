@@ -19,6 +19,7 @@
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Spain 50</a>
+      <button id="login" onclick="handleBtnLogin()" class="btn btn-warning">Login</button>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,6 +34,25 @@
       </div>
     </div>
   </nav>
+  <div class="container">
+    <h1 class="text-center text-primary">Manipulando el DOM</h1>
+    <h2 id="user" class="text-center d-none">Hola</h2>
+    <p id="screen">♦ ♥ ♠ ♣</p>
+    <button onclick="increaseCounter()">Increase</button>
+    <button onclick="decreaseCounter()">Decrementar</button>
+    <button onclick="resetCounter()">Reset</button>
+    <form>
+      <div class="mb-3">
+        <label for="mail" class="form-label">Email address</label>
+        <input id="mail" type="email" class="form-control">
+      </div>
+
+      
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-secondary">Alert</button>
+      <button type="reset" class="btn btn-danger">Cancel</button>
+    </form>
+  </div>
   <!--   <div class="container bg-light my-3">
     <div class="row">
       <div class="col-2 bg-warning">uno</div>
@@ -203,35 +223,6 @@
         </table>
       </div>
  -->
-  <div class="container">
-    <form>
-      <div class="mb-3">
-        <label for="mail" class="form-label">Email address</label>
-        <input id="mail" type="email" class="form-control">
-      </div>
-
-      <select id="pais" class="mb-3 form-select" aria-label="Default select example">
-        <option selected>Open this select menu</option>
-        <option value="es">España</option>
-        <option value="ar">Argentina</option>
-        <option value="ve">Venezuela</option>
-        <option value="uy">Uruguay</option>
-      </select>
-
-      <div class="mb-3 form-check">
-        <input id="check" type="checkbox" class="form-check-input">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-
-      <button type="submit" class="btn btn-primary">Submit</button>
-      <button type="button" class="btn btn-secondary">Alert</button>
-      <button type="reset" class="btn btn-danger">Cancel</button>
-    </form>
-  </div>
-
-  </div>
-
-  </div>
 
   <!-- INsertar mi archivo JS -->
   <script src="./js/index.js"></script>
