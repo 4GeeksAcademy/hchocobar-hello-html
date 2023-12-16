@@ -12,8 +12,21 @@
 </head>
 
 <body>
-  <h1 class="text-center text-success">HTML Form</h1>
-  <div class="container mx-5">
+  <div class="container mt-3">
+    <button onclick="handleLogin()" id="btnLogin" class="btn btn-warning">Login</button>
+  </div>
+  <h1 id="title" class="text-center text-success">HTML Form</h1>
+  <div id='card' class="container mx-5 d-none">
+    <div class="card" style="width: 18rem;">
+      <img src="..." class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+  <div id="formLogin" class="container mx-5">
     <form>
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -42,6 +55,7 @@
 
 
   <!-- JavaScript Bundle with Popper -->
+  <script src="index.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
     integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
     crossorigin="anonymous"></script>
