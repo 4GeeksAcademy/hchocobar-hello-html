@@ -14,6 +14,8 @@
 
 `git branch` muestra las ramas disponibles
 
+`git branch -a` muestra las ramas disponibles en local y en remoto
+
 `git checkout <rama>` cambia de rama
 
 `git checkout -b <rama>` crea una rama y se cambia a ella
