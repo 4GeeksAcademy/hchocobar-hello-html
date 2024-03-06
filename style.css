@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+
+body {
+  font-family: 'Roboto', serif;
+  background: grey;
+}
+
+.post {
+  background: white;
+  width: 500px;
+  height: auto;
+  margin: auto;
+  margin-top: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+.align-flex-two {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.brand {
+  display: flex;
+}
+
+.brand-icon {
+  width: 30px;
+}
+
+.footer {
+  padding: 15px;
+}
