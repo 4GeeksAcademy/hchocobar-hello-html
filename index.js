@@ -1,13 +1,32 @@
 function handleLogin() {
-  const btnLogin = document.querySelector('#btnLogin');
-  const title = document.querySelector('#title');
-  const card = document.querySelector('#card');
-  const formLogin = document.querySelector('#formLogin');
   isLogin ? logout() : login();
   console.log('Funciona');
 }
 
 // condicion ? expresionXverdadero : expresionXfalso
+
+
+function handleRegister() {
+
+}
+
+function handleSubmit() {
+  console.log('Submit')
+  console.log(isLogin)
+}
+
+function handleView() {
+  if (viewPassword) {
+    view.innerHTML = '<i class="fa-solid fa-eye"></i>'
+    floatingPassword.type = 'password'
+    console.log(floatingPassword.type);
+  } else {
+      view.innerHTML = '<i class="fa-solid fa-eye-slash"></i>'
+      floatingPassword.type = 'text'
+    console.log(floatingPassword.type);
+  }
+  viewPassword = !viewPassword;
+}
 
 
 function logout() {
@@ -32,12 +51,5 @@ function login() {
 }
 
 let isLogin = false;
-
-
-let cadena = "Hector"
-let palabras = 'da un ejemplo'
-
-// let parrafo = `hola mundo! como están. ${cadena} hoy ${palabras}`
-let parrafo = `hola mundo! como están. ${isLogin ? cadena : palabras}`
-
-console.log(parrafo)
+let viewPassword = false;
+console.log(isLogin)
