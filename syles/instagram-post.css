@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+}
+body {
+  background: darkgrey;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.post {
+  background: white;
+  width: 600px;
+  height: auto;
+  margin: auto;
+}
+.header-post, .footer-post{
+  padding: 15px;
+}
+.image-post img{
+  width: 100%;
+}
