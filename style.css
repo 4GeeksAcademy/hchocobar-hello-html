@@ -7,16 +7,20 @@ body {
   background: grey;
 }
 
+img {
+  width: 100%;
+}
+
+p {
+  padding-bottom: 15px;
+}
+
 .post {
   background: white;
   width: 500px;
   height: auto;
   margin: auto;
   margin-top: 20px;
-}
-
-img {
-  width: 100%;
 }
 
 .align-flex-two {
@@ -30,13 +34,9 @@ img {
 }
 
 .brand-icon {
-  width: 30px;
+  margin-right: 5%;
 }
 
 .footer {
   padding: 15px;
-}
-
-.footer p {
-  padding-bottom: 15px;
 }
