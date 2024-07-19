@@ -52,69 +52,141 @@
     </div>
   </nav>
 
-  <!-- Alert -->
-  <div class="container">
-    <div class="alert alert-success" role="alert">
-      A simple success alert—check it out!
+
+  <div class="container mt-4">
+    <div class="card text-center my-3">
+      <div class="card-header text-start">
+        Featured
+      </div>
+      <div class="card-body">
+        <form class="row gy-2 gx-3 align-items-center">
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInput">Name</label>
+            <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe">
+          </div>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+              <div class="input-group-text"><i class="fa-solid fa-eye"></i><i class="fa-solid fa-eye-slash"></i></div>
+            </div>
+          </div>
+          <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+            <select class="form-select" id="autoSizingSelect">
+              <option selected>Choose...</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+          <div class="col-auto">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+              <label class="form-check-label" for="autoSizingCheck">
+                Remember me
+              </label>
+            </div>
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div class="card-footer text-body-secondary text-end">
+        2 days ago
+      </div>
     </div>
+
   </div>
 
-  <div class="container my-2">
-    <div class="row">
-      <!-- Card -->
-      <div class="col-6">
-        <div class="card">
-          <img src="./img/dog.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Lola</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
-              content.</p>
-            <a href="#" class="btn btn-warning">Go somewhere</a>
-          </div>
+
+  <div class="container bg-body-tertiary mt-2 pb-2">
+    <h2 class="text-center text-info">Example 2</h2>
+    <form class="row g-3">
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4">
+      </div>
+      <div class="col-md-6">
+        <label for="inputPassword4" class="form-label">Password</label>
+        <input type="password" class="form-control" id="inputPassword4">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress" class="form-label">Address</label>
+        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+      </div>
+      <div class="col-12">
+        <label for="inputAddress2" class="form-label">Address 2</label>
+        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+      </div>
+      <div class="col-md-6">
+        <label for="inputCity" class="form-label">City</label>
+        <input type="text" class="form-control" id="inputCity">
+      </div>
+      <div class="col-md-4">
+        <label for="inputState" class="form-label">State</label>
+        <select id="inputState" class="form-select">
+          <option selected>Choose...</option>
+          <option>...</option>
+        </select>
+      </div>
+      <div class="col-md-2">
+        <label for="inputZip" class="form-label">Date</label>
+        <input type="date" class="form-control" id="inputZip">
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
         </div>
       </div>
-      <div class="col-6">
-        <!-- List group -->
-        <ul class="list-group">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
-        </ul>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary">Sign in</button>
       </div>
-    </div>
+    </form>
   </div>
 
 
-  <!-- jumbotron -->
-  <div class="container">
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-        <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in
-          previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to your
-          liking.</p>
-        <button class="btn btn-primary btn-lg" type="button">Example button</button>
+  <div class="container bg-body-tertiary mt-2">
+    <form onsubmit="">
+      <h2 class="text-center text-success">Example 1</h2>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control form-control-lg" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ingresa tu email">
       </div>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="col-md-10">
-      <div class="h-100 p-5 bg-body-tertiary border rounded-3">
-        <h2>Add borders</h2>
-        <p>Or, keep it light and add a border for some added definition to the boundaries of your content. Be sure to
-          look under the hood at the source HTML here as we've adjusted the alignment and sizing of both column's
-          content for equal-height.</p>
-        <button class="btn btn-outline-secondary" type="button">Example button</button>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="text" class="form-control form-control-lg" id="exampleInputPassword1">
       </div>
-    </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Color</label>
+        <input type="color" class="form-control form-control-color" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Date</label>
+        <input type="date" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">File</label>
+        <input type="file" class="form-control" id="exampleInputPassword1">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3 form-check">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-danger">Cancel</button>
+    </form>
   </div>
 
-  <div class="spinner-border text-success" role="status">
-    <span class="visually-hidden">Loading...</span>
-  </div>
+
 
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
