@@ -15,55 +15,38 @@
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#"><i class="fa-solid fa-code"></i> Spain-77</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
+  <h1 class="text-center text-primary mt-2">Event Handlers</h1>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-10 col-sm-8 col-md-7 col-lg-6">
+        <form onsubmit="handleSumit()">
+          <div class="form mb-3">
+            <label for="inputEmail">Email address</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="inputEmail" placeholder="name@domain.com">
+            </div>
+          </div>
+          <div class="form">
+            <label for="inputPassword">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="inputPassword" placeholder="password">
+              <div id="view" onclick="handleView()" class="input-group-text text-light bg-success">
+                <i class="fa-solid fa-eye"></i>
+              </div>
+            </div>
+          </div>
+          <div class="mt-4">
+            <button type="submit" class="btn btn-warning">Ingresar</button>
+            <button onclick="handleRegister()" type="button" class="btn btn-secondary">Registrarme</button>
+            <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+          </div>
+        </form>
       </div>
     </div>
-  </nav>
+  </div>  
 
-  <h2>Rama 2</h2>
-  <h3>Rama 3</h3>
-
-  <ul class="list-group">
-    <li class="list-group-item">An item</li>
-    <li class="list-group-item">A second item</li>
-    <li class="list-group-item">A third item</li>
-    <li class="list-group-item">A fourth item</li>
-    <li class="list-group-item">And a fifth one</li>
-  </ul>
-
-
+  <!-- Custom JS -->
+  <script src="./index.js"></script>
   <!-- Bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
     integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
