@@ -1,0 +1,36 @@
+[]  corchetes, corchetes cuadrados
+{}  llaves, corchetes cruvos
+()  paréntesis
+
+#   almoadillas, numeral, hashtag
+"   comillas dobles
+'   comillas simples, apóstrofe
+`   acento abierto, acento francés
+´   tilde, acento
+
+$   dollar
+&   ampersand
+/   barra
+\   barra invertida, contrabarra
+-   guión, signo menos
+_   gión bajo, piso, underscore
+
+:
+;
+, 
+=
+|  
+!
+?
+<
+<
+%
+
+tab
+esc
+inicio
+fin, end
+shift
+ctrl
+alt
+alt gr
