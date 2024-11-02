@@ -5,9 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Bbootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-
-  <!-- Bootswatch --> 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/slate/bootstrap.min.css">
   <!-- Fontawesone -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
@@ -44,118 +41,100 @@
           </li>
         </ul>
         <form class="d-flex" role="search">
-          
           <button class="btn btn-success" type="submit">Search</button>
         </form>
       </div>
     </div>
   </nav>
 
-  <!-- Alert -->
-  <div class="alert alert-dark" role="alert">
-    A simple danger alert—check it out!
-  </div>
-
-  <div class="container col-xl-10 col-xxl-8 px-4 py-5">
-    <div class="row align-items-center g-lg-5 py-5">
-      <div class="col-lg-7 text-center text-lg-start">
-        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">Vertically centered hero sign-up form</h1>
-        <p class="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+  <!-- Form into to Card -->
+   <div class="container">
+     <div class="card text-center">
+       <div class="card-header text-start">
+         Featured
+       </div>
+       <div class="card-body">
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">@</span>
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
+          <span class="input-group-text" id="basic-addon2">@example.com</span>
+        </div>
+        
+        <div class="mb-3">
+          <label for="basic-url" class="form-label">Your vanity URL</label>
+          <div class="input-group">
+            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
+          </div>
+          <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
+        </div>
+        
+        <div class="input-group mb-3">
+          <span class="input-group-text">$</span>
+          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+          <span class="input-group-text">.00</span>
+        </div>
+        
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+          <span class="input-group-text">@</span>
+          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+        </div>
+        
+        <div class="input-group">
+          <span class="input-group-text">With textarea</span>
+          <textarea class="form-control" aria-label="With textarea"></textarea>
+        </div>
+        
       </div>
-      <div class="col-md-10 mx-auto col-lg-5">
-        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
-          <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+      <div class="card-footer text-body-secondary">
+         <button type="submit" class="btn btn-primary">Submit</button>
+         <button type="reset" class="btn btn-danger">Cancel</button>
+       </div>
+     </div>
+   </div>
+
+  <!-- Form -->
+   <div class="container">
+    <div class="row mt-3 py-3">
+      <div class="col-10 col-md-9 col-lg-8 m-auto">
+        <form class="p-5 rounded bg-light">
+          <div class="row">
+            <div class="mb-3 col-6">
+              <label for="inputEmail1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"  value="email@example.com" readonly>
+            </div>
+            <div class="mb-3 col-6">
+              <label for="exampleInputPassword1" class="form-label form-control-sm">Password</label>
+              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ingresa tu email"> 
+            </div>
           </div>
-          <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-            <label for="floatingPassword">Password</label>
+          <div class="row">
+            <div class="mb-3 col-8">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describe tu actividad"></textarea>
+            </div>
+            <div class="mb-3 col-4">
+              <label for="formFile" class="form-label">File input</label>
+              <input class="form-control form-control-sm" type="file" id="formFile">
+            </div>
           </div>
-          <div class="checkbox mb-3">
-            <label>
-              <input type="checkbox" value="remember-me"> Remember me
-            </label>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
-          <hr class="my-4">
-          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="reset" class="btn btn-danger">Cancel</button>
         </form>
       </div>
     </div>
-  </div>
-
-  <!-- Product Example -->
-  <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-body-tertiary">
-    <div class="col-md-6 p-lg-5 mx-auto my-5">
-      <h1 class="display-3 fw-bold">Designed for engineers</h1>
-      <h3 class="fw-normal text-muted mb-3">Build anything you want with Aperture</h3>
-      <div class="d-flex gap-3 justify-content-center lead fw-normal">
-        <a class="icon-link" href="#">
-          Learn more
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-        <a class="icon-link" href="#">
-          Buy
-          <svg class="bi"><use xlink:href="#chevron-right"></use></svg>
-        </a>
-      </div>
-    </div>
-    <div class="product-device shadow-sm d-none d-md-block"></div>
-    <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
-  </div>
+   </div>
 
 
-  <!-- Spinner -->
-  <div class="text-center">
-    <div class="spinner-grow text-info" role="status">
-      <span class="visually-hidden">Loading...</span>
-    </div>
-  </div>
-  
-  <!-- List Gropup -->
-  <div class="container">
-      <div class="col-10 col-lg-4 col-sm-8 col-md-6 m-auto">
-        <ul class="list-group">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
-        </ul>
-      </div>
-  </div>
-
-  <!-- Card -->
-  <div class="card m-auto" style="width: 18rem;">
-    <img src="img/labrador.jpg" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Mar</h5>
-      <p class="card-text">Dormilona y cariñosa.</p>
-      <a href="#" class="btn btn-danger">Leer mas</a>
-    </div>
-  </div>
-
-  <!-- Grilla - Containers  Row  Cols -->
-  <div class="container mt-2">
-    <div class="row my-2">
-      <div class="col bg-primary">1</div>
-      <div class="col bg-danger">2</div>
-      <div class="col bg-success">3</div>
-      <div class="col bg-primary">1</div>
-    </div>
-    <div class="row my-2">
-      <div class="col-6 bg-warning">1</div>
-      <div class="col-4 bg-info">2</div>
-      <div class="col-2 bg-light">3</div>
-    </div>
-    <div class="row my-2">
-      <div class="col-12 col-sm-6 col-md-8 col-lg-3 bg-primary">1</div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-danger">2</div>
-      <div class="col-12 col-sm-6 col-md-8 col-lg-3 bg-primary">1</div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3 bg-success">3</div>
-    </div>
-  </div>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 </body>
