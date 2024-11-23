@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Document</title>
 </head>
-<body class="bg-secondary">
+<body class="bg-body-tertiary">
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md bg-body-tertiary">
     <div class="container-fluid">
@@ -47,92 +47,38 @@
     </div>
   </nav>
 
-  <!-- Form into to Card -->
-   <div class="container">
-     <div class="card text-center">
-       <div class="card-header text-start">
-         Featured
-       </div>
-       <div class="card-body">
-        <div class="input-group mb-3">
-          <span class="input-group-text" id="basic-addon1">@</span>
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-        </div>
-        
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="basic-addon2">
-          <span class="input-group-text" id="basic-addon2">@example.com</span>
-        </div>
-        
-        <div class="mb-3">
-          <label for="basic-url" class="form-label">Your vanity URL</label>
-          <div class="input-group">
-            <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
-            <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3 basic-addon4">
-          </div>
-          <div class="form-text" id="basic-addon4">Example help text goes outside the input group.</div>
-        </div>
-        
-        <div class="input-group mb-3">
-          <span class="input-group-text">$</span>
-          <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
-          <span class="input-group-text">.00</span>
-        </div>
-        
-        <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="Username" aria-label="Username">
-          <span class="input-group-text">@</span>
-          <input type="text" class="form-control" placeholder="Server" aria-label="Server">
-        </div>
-        
-        <div class="input-group">
-          <span class="input-group-text">With textarea</span>
-          <textarea class="form-control" aria-label="With textarea"></textarea>
-        </div>
-        
-      </div>
-      <div class="card-footer text-body-secondary">
-         <button type="submit" class="btn btn-primary">Submit</button>
-         <button type="reset" class="btn btn-danger">Cancel</button>
-       </div>
-     </div>
-   </div>
 
-  <!-- Form -->
-   <div class="container">
-    <div class="row mt-3 py-3">
-      <div class="col-10 col-md-9 col-lg-8 m-auto">
-        <form class="p-5 rounded bg-light">
-          <div class="row">
-            <div class="mb-3 col-6">
-              <label for="inputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp"  value="email@example.com" readonly>
-            </div>
-            <div class="mb-3 col-6">
-              <label for="exampleInputPassword1" class="form-label form-control-sm">Password</label>
-              <input type="text" class="form-control" id="exampleInputPassword1" placeholder="ingresa tu email"> 
+  <h1 id="title" onclick="handleTitle()" class="text-center text-primary mt-2">Event Handlers</h1>
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-10 col-sm-8 col-md-7 col-lg-6">
+        <form onsubmit="handleSubmit()">
+          <div class="form mb-3">
+            <label for="inputEmail">Email address</label>
+            <div class="input-group">
+              <input id="inputEmail" type="email" class="form-control" placeholder="name@domain.com">
             </div>
           </div>
-          <div class="row">
-            <div class="mb-3 col-8">
-              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Describe tu actividad"></textarea>
-            </div>
-            <div class="mb-3 col-4">
-              <label for="formFile" class="form-label">File input</label>
-              <input class="form-control form-control-sm" type="file" id="formFile">
+          <div class="form">
+            <label for="inputPassword">Password</label>
+            <div class="input-group">
+              <input id="inputPassword" type="password" class="form-control" placeholder="password">
+              <div id="view" onclick="handleView()" class="input-group-text text-light bg-success">
+                <i class="fas fa-eye"></i>
+              </div>
             </div>
           </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+          <div class="mt-4">
+            <button type="submit" class="btn btn-warning">Ingresar</button>
+            <button onclick="handleRegister([115, 'hola', 'spain-91'])" type="button" class="btn btn-secondary">Registrarme</button>
+            <button type="reset" class="btn btn-outline-secondary">Cancel</button>
           </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-          <button type="reset" class="btn btn-danger">Cancel</button>
         </form>
       </div>
     </div>
-   </div>
+  </div>  
+
+  <script src="./index.js"></script>
 
 
   <!-- Bootstrap JS -->
